@@ -17,16 +17,29 @@
 </body>
 
 </html>
+
 Перше редакція
 git pull origin main --allow-unrelated-histories
 git push -u origin main
+__________________________________________
 
 Друга редакці
 git remote add origin https://github.com/ТВІЙ_ЛОГІН/ТВІЙ_РЕПО.git
 git branch -M main
 git push -u origin main
+___________________________________________
+
+Третя редакція в новій гілці feature_branch
+git remote add origin https://github.com/твій-логін/твій-репозиторій.git
+# або SSH-версія:
+# git remote add origin git@github.com:твій-логін/твій-репозиторій.git
+
+git push -u origin master
+# або якщо у тебе основна гілка main:
+>>>>>>> feature_branch
+git push -u origin main
+____________________________________________
 
 Четверта редакція
 git fetch origin
 git merge origin/main --allow-unrelated-histories
-git push -u origin main
